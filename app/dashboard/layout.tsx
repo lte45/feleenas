@@ -1,4 +1,5 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+//export const experimental_ppr = true; /*Need Canary version of Next.js for this to work...*/
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
