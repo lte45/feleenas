@@ -15,7 +15,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
   const createInvoiceWithNullId = createOrEditInvoice.bind(null,'0');
   const [state, formAction] = useActionState(createInvoiceWithNullId, initialState);
- console.log(state)
+ 
   return (
     <form action={formAction}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
